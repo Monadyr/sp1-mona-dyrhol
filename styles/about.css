@@ -1,0 +1,93 @@
+h1{
+  text-align: center;
+  text-wrap: balance;
+  margin: 3rem auto 4rem auto;
+}
+h2{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+p {
+  margin: 0 auto;
+  width: clamp(100px, 80%, 650px);
+  padding-bottom: 1rem;
+}
+.container {
+  background: white;
+  border-radius: 10px;
+  margin: 1rem 5px 6rem 5px;
+  box-shadow: var(--container-shadow);
+  position: relative;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.images {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  padding-bottom: 30%;
+  max-width: 500px;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.img1 {
+  width: clamp(50px, 39.2vw, 232px);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 154 / 232 ;
+  border-radius: 10px;
+  grid-column: 1;
+  transform: translateY(50%);
+}
+.img2 {
+  width: clamp(80px, 49vw, 305px);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 192 / 240;
+  border-radius: 10px;
+  grid-column: 2;
+}
+
+.container.sosial-card{
+  grid-template-columns: none;
+  grid-template-rows: repeat(4, auto);
+  gap: 4rem;
+}
+.sosial-card div {
+  justify-items: start;
+}
+.sosial-section div {
+  place-self: center;
+  display: flex;
+  gap: 2rem;
+}
+.contact-section address,
+.newsletter-section form {
+  place-self: center;
+}
+
+@media(min-width:900px) {
+  .container {
+    grid-template-columns: 1.3fr 1fr;
+    overflow: hidden;
+  }
+ .images {
+  transform: translateX(-5%);
+ }
+}
+@media(min-width:1000px) {
+  .contact-section,
+  .sosial-section,
+  .newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
+  }
+}
