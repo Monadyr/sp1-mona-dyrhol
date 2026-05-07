@@ -96,7 +96,6 @@ font-size: clamp(20px, 7.633vw, 40px);
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
-  max-width: 80%;
   line-height: 1;
   text-align: center;
 }
