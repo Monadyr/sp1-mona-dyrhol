@@ -44,6 +44,7 @@ p {
   border-radius: 10px;
   grid-column: 1;
   transform: translateY(50%);
+  display: block;
 }
 .img2 {
   width: clamp(80px, 49vw, 305px);
@@ -52,25 +53,34 @@ p {
   aspect-ratio: 192 / 240;
   border-radius: 10px;
   grid-column: 2;
+  display: block;
 }
-
+/* Sosial Media */
 .container.sosial-card{
+  display: grid;
   grid-template-columns: none;
   grid-template-rows: repeat(4, auto);
   gap: 4rem;
 }
-.sosial-card div {
-  justify-items: start;
+
+.sosial-section,
+.contact-section,
+.newsletter-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sosial-section div {
-  place-self: center;
   display: flex;
+  justify-content: flex-start;
   gap: 2rem;
+
 }
-.contact-section address,
-.newsletter-section form {
-  place-self: center;
+.contact-section address{
+  font-style: normal;
 }
+
 #email{
   padding: 5px 10px;
   border-radius: 10px;
@@ -78,7 +88,7 @@ p {
   font-size: 15px;
   margin: 8px 6px 0 0;
 }
-
+/* Museum*/
 @media(min-width:900px) {
   .container {
     grid-template-columns: 1.3fr 1fr;
@@ -88,13 +98,22 @@ p {
   transform: translateX(-5%);
  }
 }
+/* Sosial Media */
 @media(min-width:1000px) {
   .contact-section,
   .sosial-section,
   .newsletter-section {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 6vw;
     margin: 0 auto;
-    width: 1000px;
+    width: clamp(700px, 75vw, 1000px);
+  }
+  .sosial-card p{
+    margin: 0;
+    width: min(40vw, 500px)
+  }
+  .sosial-card{
+    padding: 1rem 0 80px 0;
   }
 }

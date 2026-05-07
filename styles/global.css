@@ -103,13 +103,14 @@ p{
 .navigation-menu {
   display: none;
   position: fixed;
-  top: 100%;
+  top: clamp(94px, 23.86vw, 100px);
   left: 0;
   width: 100%;
   height: 600px;
 
-  background: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 #hamburger-toggle:checked ~ .navigation-menu {
@@ -204,13 +205,16 @@ hr{
   font-weight: 600;
 }
 
+
 #email-footer{
   padding: 5px 10px;
   border-radius: 10px;
   border: solid 1px #8A8A8A;
   font-size: 15px;
   margin: 8px 6px 0 0;
+  font-size: 15px;
 }
+
 
 .subscribe-button{
   font-size: 15px;
@@ -220,9 +224,13 @@ hr{
   border-radius: 10px;
   background-color: #0004FF;
   padding: 5px 5px;
-  height: 27px;
-  line-height: 0;
-  margin-top: 1rem;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+.subscribe-button:hover {
+  color: #0004FF;
+  font-weight: 600;
+  background-color: transparent;
 }
 
 /* Desktop Menu */

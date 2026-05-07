@@ -14,9 +14,10 @@
   bottom: -29%;
   width: 95%;
   max-width: 728px;
-  place-self: center;
   text-align: center;
   padding: 20px 15px;
+  left: 50%;
+  transform: translateX(-50%);
 
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
@@ -92,7 +93,8 @@ font-size: clamp(20px, 7.633vw, 40px);
   border-radius: 10px;
   position: absolute;
   top: 5px;
-  place-self: center;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: white;
   max-width: 80%;
   line-height: 1;
@@ -177,16 +179,19 @@ font-size: clamp(20px, 7.633vw, 40px);
   background: #0004FF;
   border-radius: 20px;
   font-family: var(--headings);
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   font-weight: 700;
   padding: 10px;
   position: relative;
   margin: auto;
-  height: 59px;
-  width: 179px;
   text-align: center;
   line-height: 1;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  color: #0004FF;
+  background-color: transparent;
 }
 
 .visit-section{
@@ -261,6 +266,7 @@ font-size: clamp(20px, 7.633vw, 40px);
   }
   .hero {
     left: 0;
+    transform: translate(0);
     bottom: -10%;
   }
   .exhibitions-section{
