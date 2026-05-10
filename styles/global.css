@@ -4,7 +4,7 @@
   --body-text: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --container-shadow: 0 0 30px 0 rgba(0, 56, 152, 1);
 }
-
+/* General */
 *{
  margin: 0;
  padding: 0;
@@ -33,10 +33,13 @@ h1,h2,h3 {
   font-family: var(--headings);
 }
 h1{
-  font-size: clamp(20px, 7.633vw, 40px);
+  font-size: clamp(25px, 7.633vw, 40px);
+  text-align: center;
+  text-wrap: balance;
+  margin: 3rem auto 4rem auto;
 }
 h2{
-  font-size: clamp(25px, 5.04vw, 30px);
+  font-size: clamp(20px, 5.04vw, 30px);
 }
 p{
   font-size: 20px;
@@ -138,6 +141,7 @@ p{
 }
 
 /* Hover and active nav links */
+.nav-links:focus-visible,
 .nav-links:hover {
   color: #5DA9FF;
 }
@@ -216,7 +220,6 @@ hr{
   font-size: 15px;
 }
 
-
 .subscribe-button{
   font-size: 15px;
   font-family: var(--body-text);
@@ -228,10 +231,9 @@ hr{
   margin-top: 8px;
   transition: background-color 0.3s ease;
 }
+.subscribe-button:focus-visible,
 .subscribe-button:hover {
-  color: #0004FF;
-  font-weight: 600;
-  background-color: transparent;
+  background-color: #6A6CFF;
 }
 
 /* Desktop Menu */
