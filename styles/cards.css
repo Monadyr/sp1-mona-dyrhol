@@ -1,0 +1,16 @@
+/* Content section boxes */
+.container,
+.events-card,
+.kids-section,
+.teachers-section,
+.researchers-section,
+.exhibitions-section,
+.event-section a,
+.visit-section {
+  background: white;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: var(--container-shadow);
+}
+

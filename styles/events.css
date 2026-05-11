@@ -17,10 +17,8 @@ p,h2{
   padding-bottom: 2rem;
 }
 .events-card{
-  background: white;
-  border-radius: 10px;
-  margin: 1rem 5px 6rem 5px;
-  box-shadow: var(--container-shadow);
+  margin-top: 1rem;
+  margin-bottom: 6rem;
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
