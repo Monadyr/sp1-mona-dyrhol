@@ -17,7 +17,6 @@ p {
   gap: 1rem;
   padding: 3rem 0;
 }
-
 .images {
   position: relative;
   display: grid;
@@ -28,7 +27,6 @@ p {
   gap: 1rem;
   margin: 0 auto;
 }
-
 .img1 {
   width: clamp(50px, 39.2vw, 232px);
   max-width: 100%;
@@ -55,7 +53,6 @@ p {
   grid-template-rows: repeat(4, auto);
   gap: 4rem;
 }
-
 .sosial-section,
 .contact-section,
 .newsletter-section{
@@ -73,7 +70,6 @@ p {
 .contact-section address{
   font-style: normal;
 }
-
 #email{
   padding: 5px 10px;
   border-radius: 10px;

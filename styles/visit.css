@@ -2,14 +2,12 @@ h2{
   text-align: center;
   padding-bottom: 1rem;
 }
-
 p {
   margin: 0 auto;
   width: clamp(100px, 80%, 700px);
   text-align: center;
   padding-bottom: 1rem;
 }
-
 .container{
   margin-top: 1rem;
   margin-bottom: 6rem;
@@ -45,7 +43,6 @@ p {
   width: clamp(5px, 6.4vw, 32px);
   height: auto;
 }
-
 .hours-section dl {
   font-size: 20px;
   display: grid;

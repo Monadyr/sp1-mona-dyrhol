@@ -20,7 +20,6 @@ main img {
 .img2{
   width: clamp(50px, 60%, 200px);
 }
-
 /* Kids */
 .kids-section,
 .teachers-section,
@@ -34,7 +33,6 @@ main img {
   justify-content: center;
   gap: 2rem;
 }
-
 .img5,
 .teachers-section img,
 .researchers-section img{
@@ -42,7 +40,6 @@ main img {
   height: auto;
   margin: 2rem auto;
 }
-
 .kids-club {
   display: grid;
   grid-template-columns: 1fr;
@@ -54,7 +51,6 @@ main img {
 .text-top p{
   padding-bottom: 2rem;
 }
-
 /* Teachers and Researchers */
 .teachers-section p, 
 .teachers-section h2, 
@@ -68,7 +64,6 @@ main img {
   grid-template-columns: 1fr;
   align-items: center;
 }
-
 @media(min-width: 800px){
   .kids-club{
     grid-template-columns: 1.5fr 1fr;
