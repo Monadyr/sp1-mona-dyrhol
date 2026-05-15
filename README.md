@@ -6,6 +6,9 @@ This is a multi-page website for the Community Science Museum, designed to engag
 ## Live website
 https://monadyr.github.io/sp1-mona-dyrhol/
 
+## Repository
+https://github.com/Monadyr/sp1-mona-dyrhol
+
 ## Workflow
 This project mainly uses a simple Git workflow.
 
@@ -36,7 +39,7 @@ ChatGPT was used in this project as a support resource during development and te
 - Creating an animated figure for the placeholder page.
 
 ## Technical Report
-[View Technical Report]
+[View Technical Report](docs/Technical_Report_SP1_Mona-Dyrhol.pdf)
 
 ## Author
 Mona Dyrhol
