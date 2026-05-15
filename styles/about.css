@@ -69,6 +69,13 @@ p {
 }
 .contact-section address{
   font-style: normal;
+  font-weight: 500;
+}
+.contact-section address a {
+  display: flex;
+  align-items: center;
+  gap:8px;
+  font-style: normal;
 }
 #email{
   padding: 5px 10px;
@@ -101,8 +108,5 @@ p {
   .sosial-card p{
     margin: 0;
     width: min(40vw, 500px)
-  }
-  .sosial-card{
-    padding: 1rem 0 80px 0;
   }
 }

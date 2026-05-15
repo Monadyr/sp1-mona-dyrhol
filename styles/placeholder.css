@@ -1,24 +1,20 @@
 h1 {
   margin-top: 2rem;
 }
-
 .wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
-
 /* Dino */
 .dino {
   position: relative;
   width: 140px;
   height: 80px;
-  animation: walk 10s linear infinite;
+  animation: walk 15s linear infinite;
 }
-
 /* Body */
 .body {
   position: absolute;
@@ -29,7 +25,6 @@ h1 {
   left: 20px;
   top: 10px;
 }
-
 /* Tail */
 .tail {
   position: absolute;
@@ -42,7 +37,6 @@ h1 {
   transform-origin: right;
   animation: tailWag 1s infinite alternate;
 }
-
 /* Head */
 .head {
   position: absolute;
@@ -54,7 +48,6 @@ h1 {
   top: 0;
   animation: bite 1s infinite;
 }
-
 /* Eye */
 .eye {
   position: absolute;
@@ -65,7 +58,6 @@ h1 {
   top: 10px;
   right: 10px;
 }
-
 /* Teeth */
 .teeth {
   position: absolute;
@@ -79,10 +71,8 @@ h1 {
     30% 100%, 40% 0,
     50% 100%, 60% 0,
     70% 100%, 80% 0,
-    90% 100%, 100% 0
-  );
+    90% 100%, 100% 0);
 }
-
 /* Legs */
 .leg {
   position: absolute;
@@ -93,17 +83,14 @@ h1 {
   border-radius: 5px;
   transform-origin: top;
 }
-
 .leg1 {
   left: 30px;
-  animation: legMove 0.3s infinite alternate;
+  animation: legMove 0.5s infinite alternate;
 }
-
 .leg2 {
   left: 70px;
-  animation: legMove 0.3s infinite alternate-reverse;
+  animation: legMove 0.5s infinite alternate-reverse;
 }
-
 /* Animations */
 @keyframes walk {
   0% {
@@ -113,7 +100,6 @@ h1 {
     transform: translateX(100vw);
   }
 }
-
 @keyframes legMove {
   0% {
     transform: rotate(20deg);
@@ -122,7 +108,6 @@ h1 {
     transform: rotate(-20deg);
   }
 }
-
 @keyframes tailWag {
   0% {
     transform: rotate(10deg);
@@ -131,7 +116,6 @@ h1 {
     transform: rotate(-10deg);
   }
 }
-
 @keyframes bite {
   0% {
     transform: rotate(0deg);
