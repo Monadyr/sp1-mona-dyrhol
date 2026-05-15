@@ -9,7 +9,7 @@
 }
 .hero {
   position: absolute;
-  bottom: -29%;
+  bottom: -130px;
   width: 95%;
   max-width: 728px;
   text-align: center;
@@ -270,7 +270,7 @@ h3{
   .hero {
     left: 0;
     transform: translate(0);
-    bottom: -10%;
+    bottom: -100px;
   }
   .exhibitions-section{
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -280,5 +280,6 @@ h3{
   /* Opening Hours */
   .opening-hours {
     margin-top: -100px;
+    margin-bottom: 6rem;
   }
 }
